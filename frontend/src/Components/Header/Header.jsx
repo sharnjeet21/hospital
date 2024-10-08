@@ -40,7 +40,7 @@ const navLink = [
   // },
   
   {
-    path: 'https://gundeeps247.github.io/payment/', 
+    path: 'https://buy.stripe.com/test_6oE1573clcXM4SYbII', 
     display: 'Payment',
   },
 ]
