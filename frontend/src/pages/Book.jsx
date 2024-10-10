@@ -128,14 +128,14 @@ const Book = () => {
       {/* Your existing JSX */}
       <form className="px-4 mx-auto max-w-screen-md" onSubmit={submitHandler}>
         <div>
-          <label htmlFor="email" className="form_label">
-            Your Email
+          <label htmlFor="phone" className="form_label">
+            Your Phone Number
           </label>
           <input
-            type="email"
-            id="email"
-            value={userData.email}
-            placeholder="example@gmail.com"
+            type="tel"
+            id="phone"
+            value={userData.phone}
+            placeholder="+91 9876543210"
             className="form_input mt-1"
             disabled
             onChange={handleEmailChange}
