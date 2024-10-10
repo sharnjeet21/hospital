@@ -147,9 +147,10 @@ const Book = () => {
           <input
             type="text"
             id="price"
-            value={formData.ticketPrice}
+            value={500}
             className="form_input mt-1"
             onChange={handlePriceChange}
+            disabled
           />
         </div>
         <div className="sm:col-span-2">
