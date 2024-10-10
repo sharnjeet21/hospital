@@ -30,10 +30,10 @@ const navLink = [
     path: '/book/', 
     display: 'Book Appointment',
   },
-  {
-    path: '/hospital', 
-    display: 'Hospital',
-  },
+  // {
+  //   path: '/hospital', 
+  //   display: 'Hospital',
+  // },
   // {
   //   path: 'https://stellular-bombolone-b927da.netlify.app/', 
   //   display: 'Virtual Assessment',
