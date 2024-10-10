@@ -137,7 +137,6 @@ const Book = () => {
             value={userData.phone}
             placeholder="+91 9876543210"
             className="form_input mt-1"
-            disabled
             onChange={handleEmailChange}
           />
         </div>
@@ -150,7 +149,6 @@ const Book = () => {
             id="price"
             value={formData.ticketPrice}
             className="form_input mt-1"
-            disabled
             onChange={handlePriceChange}
           />
         </div>
