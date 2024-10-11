@@ -12,7 +12,7 @@ const navLink = [
   { path: '/services/', display: 'Services' },
   { path: '/contact/', display: 'Contact' },
   { path: 'https://healersquad.netlify.app/', display: 'Nearby' },
-  { path: '/book/', display: 'Book Appointment' },
+  { path: '/book/', display: 'Book OPD Appointment' },
   { path: 'https://buy.stripe.com/test_6oE1573clcXM4SYbII', display: 'Payment' },
 ];
 
