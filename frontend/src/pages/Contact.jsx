@@ -9,13 +9,13 @@ const Contact = () => {
         </p>
         <form action="#" className="space-y-8">
           <div>
-            <label htmlFor="email" className="form_label">
-              Your Email
+            <label htmlFor="phone" className="form_label">
+              Your Phone Number
             </label>
             <input
-              type="email"
-              id="email"
-              placeholder="example@gmail.com"
+              type="tel"
+              id="phone"
+              placeholder="+91 9876543210"
               className="form_input mt-1"
             />
           </div>
@@ -41,7 +41,9 @@ const Contact = () => {
               className="form_input mt-1"
             />
           </div>
-          <button type="submit" className="btn rounded sm:w-fit">Submit</button>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <button type="submit" className="btn rounded sm:w-fit">Submit</button>
+          </div>
         </form>
       </div>
     </section>
