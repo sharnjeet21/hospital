@@ -7,38 +7,13 @@ import { authContext } from '../../context/AuthContext';
 
 // Navigation Links
 const navLink = [
-  {
-    path: '/home/',
-    display: 'Home',
-  },
-  {
-    path: '/doctors/',
-    display: 'Doctors',
-  },
-  {
-    path: '/services/',
-    display: 'Services',
-  },
-  {
-    path: '/contact/',
-    display: 'Contact',
-  },
-  {
-    path:'/hospitals',
-    display: 'Hospitals',
-  },
-  {
-    path: 'https://healersquad.netlify.app/',
-    display: 'Nearby',
-  },
-  {
-    path: '/book/',
-    display: 'Book Appointment',
-  },
-  {
-    path: 'https://buy.stripe.com/test_6oE1573clcXM4SYbII',
-    display: 'Payment',
-  },
+  { path: '/home/', display: 'Home' },
+  { path: '/doctors/', display: 'Doctors' },
+  { path: '/services/', display: 'Services' },
+  { path: '/contact/', display: 'Contact' },
+  { path: 'https://healersquad.netlify.app/', display: 'Nearby' },
+  { path: '/book/', display: 'Book Appointment' },
+  { path: 'https://buy.stripe.com/test_6oE1573clcXM4SYbII', display: 'Payment' },
 ];
 
 const Header = () => {
@@ -50,9 +25,11 @@ const Header = () => {
   const handleStickyHeader = () => {
     window.addEventListener('scroll', () => {
       if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        headerRef.current.classList.add('sticky__header');
+        headerRef.current.classList.add('bg-white', 'shadow-md');
+        headerRef.current.classList.remove('bg-indigo-200');
       } else {
-        headerRef.current.classList.remove('sticky__header');
+        headerRef.current.classList.remove('bg-white', 'shadow-md');
+        headerRef.current.classList.add('bg-indigo-200');
       }
     });
   };
@@ -64,7 +41,6 @@ const Header = () => {
 
   const toggleMenu = () => menuRef.current.classList.toggle('show__menu');
 
-  // Handle navigation based on user role
   const handleProfileClick = () => {
     if (role === 'doctor') {
       navigate('/doctors/profile/me');
@@ -74,14 +50,12 @@ const Header = () => {
   };
 
   return (
-    <header ref={headerRef} className="sticky top-0 z-50 bg-indigo-200 shadow-lg">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        {/* ================ Logo =============== */}
+    <header ref={headerRef} className="sticky top-0 z-50 bg-indigo-200 shadow-lg transition-all duration-300">
+      <div className="container mx-auto px-4 py-3 flex justify-between items-center h-16">
         <div className="logo">
           <img src={logo} alt="Logo" className="h-10" />
         </div>
 
-        {/* ================ Menu =============== */}
         <nav ref={menuRef} className="hidden md:flex space-x-8">
           <ul className="flex items-center space-x-8">
             {navLink.map((link, index) => (
@@ -101,7 +75,6 @@ const Header = () => {
           </ul>
         </nav>
 
-        {/* ============== Profile/Right Section ============== */}
         <div className="flex items-center space-x-6">
           {token && user ? (
             <div
@@ -121,14 +94,12 @@ const Header = () => {
             </div>
           ) : (
             <Link to="/login">
-              {/* Change: Removed fixed class and added proper positioning */}
-              <button className="relative md:fixed md:top-4 md:right-4 bg-blue-500 py-2 px-6 text-white font-semibold rounded-full shadow-lg">
+              <button className="bg-blue-500 py-2 px-6 text-white font-semibold rounded-full shadow-lg">
                 Login
               </button>
             </Link>
           )}
 
-          {/* Mobile Menu Icon */}
           <button className="md:hidden" onClick={toggleMenu}>
             <BiMenu className="w-6 h-6 text-gray-700" />
           </button>
