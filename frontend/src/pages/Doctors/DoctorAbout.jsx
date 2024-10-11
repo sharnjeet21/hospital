@@ -74,7 +74,7 @@ const DoctorAbout = () => {
       Sr. labourer
     </p>
     <p className="text-[14px] leading-5 font-medium text-textColor">
-      New Apollo Hospital, Brampton PIND.
+      New Apollo Hospital, Brampton .
     </p> 
   </li>
 </ul>
