@@ -22,23 +22,6 @@ const Header = () => {
   const { user, role, token } = useContext(authContext);
   const navigate = useNavigate();
 
-  const handleStickyHeader = () => {
-    window.addEventListener('scroll', () => {
-      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        headerRef.current.classList.add('bg-white', 'shadow-md');
-        headerRef.current.classList.remove('bg-indigo-200');
-      } else {
-        headerRef.current.classList.remove('bg-white', 'shadow-md');
-        headerRef.current.classList.add('bg-indigo-200');
-      }
-    });
-  };
-
-  useEffect(() => {
-    handleStickyHeader();
-    return () => window.removeEventListener('scroll', handleStickyHeader);
-  }, []);
-
   const toggleMenu = () => menuRef.current.classList.toggle('show__menu');
 
   const handleProfileClick = () => {
