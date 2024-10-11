@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 const SidePanel = () => {
   return (
@@ -6,7 +6,7 @@ const SidePanel = () => {
       <div className="flex items-center justify-between">
         <p className="text_para mt-0 font-semibold">Ticket Price</p>
         <span className="text-[16px] leading-7 lg:text-[22px] lg:leading-8 text-headingColor font-bold">
-          500 BDT
+          500 INR
         </span>
       </div>
       <div className="mt-[30px]">
@@ -38,9 +38,10 @@ const SidePanel = () => {
               4:00 PM - 9:00 PM
             </p>
           </li>
-         
         </ul>
-        <button className="btn px-2 w-full rounded-md">Book Appointment</button>
+        <Link to="/book">
+          <button className="btn px-2 w-full rounded-md">Book Appointment</button>
+        </Link>
       </div>
     </div>
   );

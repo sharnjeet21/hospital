@@ -42,7 +42,7 @@ const DoctorDetails = () => {
               </div>
             </div>
 
-            <div className="mt-8 border-b border-solid border-[#0066ff34]">
+            <div className="mt-8 border-b border-solid border-[#0066ff34] mt-40">
               <button
                 onClick={() => setTab('about')}
                 className={`py-2 px-5 mr-5 text-[16px] leading-7 font-semibold ${

@@ -26,7 +26,7 @@ const DoctorAbout = () => {
           <li className="flex flex-col sm:flex-row sm:justify-between sm:items-end md:gap-5 mb-[30px]">
             <div>
               <span className="text-irisBlueColor text-[15px] leading-6 font-semibold">
-              {formatDate("07-04-2010")} - {formatDate("09-04-2010")}
+              {formatDate("07-04-2007")} - {formatDate("09-04-2009")}
               </span>
               <p className="text-[16px] leading-6 font-medium text-textColor">
                 PHD in Labour
@@ -39,7 +39,7 @@ const DoctorAbout = () => {
           <li className="flex flex-col sm:flex-row sm:justify-between sm:items-end md:gap-5 mb-[30px]">
             <div>
               <span className="text-irisBlueColor text-[15px] leading-6 font-semibold">
-                {formatDate("12-04-2010")} - {formatDate("07-04-2010")}
+                {formatDate("07-04-2010")} - {formatDate("07-04-2012")}
               </span>
               <p className="text-[15px] leading-6 font-medium text-textColor">
                 PHD in Surgeon
