@@ -7,6 +7,7 @@ import { BASE_URL } from '../../config';
 import Loading from '../../Components/Loader/Loading';
 import Error from '../../Components/Error/Error'
 import Profile from "./DoctorProfile"
+import Photo from "/home/sharnjeet/hospital/frontend/src/assets/images/faq-img.png"
 const Dashboard = () => {
   const { dispatch } = useContext(authContext);
   const [tab, setTab] = useState("bookings");
@@ -31,7 +32,7 @@ const Dashboard = () => {
               <div className="flex items-center justify-center">
                 <figure className="w-[100px] h-[100px] rounded-full border-2 border-solid border-primaryColor">
                   <img
-                    src={userData.photo}
+                    src={Photo}
                     alt=""
                     className="w-full h-full rounded-full"
                   />
