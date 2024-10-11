@@ -24,7 +24,7 @@ const Book = () => {
   const [formData, setFormData] = useState({
     doctor: null,
     user: userData._id,
-    ticketPrice: 2000,
+    ticketPrice: 500,
     appointmentDate: null,
     status: 'pending',
     isPaid: false,
