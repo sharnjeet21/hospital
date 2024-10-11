@@ -298,20 +298,21 @@ const Home = () => {
       {/* =========faq section============================= */}
 
       <section>
-        <div className="container">
-          <div className="flex justify-between gap-[5-px] lg:gap-0">
-            <div className="w-1/2  hidden md:block">
-              <img src={faqImg} alt=""/> </div>
-          </div>
-          <div className="w-full md:w-1/2">
-            <h2 className="heading">
-              Most questions by our beloved patients
-            </h2>
-            <FaqList/>
-          </div>
-
+      <div className="container mx-auto flex flex-col md:flex-row justify-between gap-4">
+        {/* Image Section */}
+        <div className="w-full md:w-1/2 hidden md:block">
+          <img src={faqImg} alt="FAQ" className="object-cover" />
         </div>
-      </section>
+
+        {/* FAQ Section */}
+        <div className="w-full mt-40 md:w-1/2">
+          <h2 className="heading text-xl font-semibold">
+            Most questions by our beloved patients
+          </h2>
+          <FaqList />
+        </div>
+      </div>
+    </section>
       {/* =========faq section end ============================= */}
 
 
