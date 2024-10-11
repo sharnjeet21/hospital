@@ -117,7 +117,8 @@ const Header = () => {
             </div>
           ) : (
             <Link to="/login">
-              <button className="bg-blue-500 py-2 px-6 text-white font-semibold rounded-full hover:bg-blue-600 transition-all">
+              {/* Change: Removed fixed class and added proper positioning */}
+              <button className="relative md:fixed md:top-4 md:right-4 bg-blue-500 py-2 px-6 text-white font-semibold rounded-full shadow-lg">
                 Login
               </button>
             </Link>

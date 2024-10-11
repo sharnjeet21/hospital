@@ -70,7 +70,7 @@ const Login = () => {
               type="tel"
               placeholder="Enter Your Email"
               name="phone"
-              value={formData.mail}
+              value={formData.email}
               onChange={handleInputChange}
               className="w-full  py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-b-primaryColor text-[16px] leading-7 text-headingColor placeholder-textColor rounded-md cursor-pointer"
               required
@@ -78,7 +78,7 @@ const Login = () => {
           </div>
           <div className="mb-5">
             <input
-              type="password"
+              type="password" 
               placeholder="Password"
               name="password" 
               value={formData.password}
