@@ -9,13 +9,13 @@ const Contact = () => {
         </p>
         <form action="#" className="space-y-8">
           <div>
-            <label htmlFor="phone" className="form_label">
-              Your Phone Number
+            <label htmlFor="email" className="form_label">
+              Your mail
             </label>
             <input
-              type="tel"
-              id="phone"
-              placeholder="+91 9876543210"
+              type="email"
+              id="email"
+              placeholder="joe@exapmle.com"
               className="form_input mt-1"
             />
           </div>
