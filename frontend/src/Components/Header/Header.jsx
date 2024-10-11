@@ -24,6 +24,10 @@ const navLink = [
     display: 'Contact',
   },
   {
+    path:'/hospitals',
+    display: 'Hospitals',
+  },
+  {
     path: 'https://healersquad.netlify.app/',
     display: 'Nearby',
   },

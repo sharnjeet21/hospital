@@ -5,25 +5,25 @@ import {RiLinkedinFill} from "react-icons/ri"
 import { AiFillYoutube,AiFillGithub,AiOutlineInstagram, AiFillInstagram } from 'react-icons/ai';
 
 
-// const socialLink = [
-//   {
-//     path:"https://www.youtube.com/watch?v=K4_J3ShsUOY&t=5001s",
-//     icon:<AiFillYoutube className='group-hover:text-while w-4 h-5'/>,
-//   },
-//   {
-//     path:"https://github.com/",
-//     icon:<AiFillGithub className='group-hover:text-while w-4 h-5'/>,
-//   },
-//   {
-//     path:"https://www.instagram.com/",
-//     icon:<AiOutlineInstagram className='group-hover:text-while w-4 h-5'/>,
-//   },
+const socialLink = [
+  {
+    path:"https://www.youtube.com/",
+    icon:<AiFillYoutube className='group-hover:text-while w-4 h-5'/>,
+  },
+  {
+    path:"https://github.com/",
+    icon:<AiFillGithub className='group-hover:text-while w-4 h-5'/>,
+  },
+  {
+    path:"https://www.instagram.com/",
+    icon:<AiOutlineInstagram className='group-hover:text-while w-4 h-5'/>,
+  },
 
-//   {
-//     path:"https://www.linkedin.com/feed/",
-//     icon:<RiLinkedinFill className='group-hover:text-while w-4 h-5'/>,
-//   },
-// ];
+  {
+    path:"https://www.linkedin.com/feed/",
+    icon:<RiLinkedinFill className='group-hover:text-while w-4 h-5'/>,
+  },
+];
 
 
 const quickLinks01 = [
