@@ -68,13 +68,13 @@ const DoctorAbout = () => {
   </li>
   <li className="p-4 rounded bg-[#fff9ea]">
     <span className="text-yellowColor text-[15px] leading-6 font-semibold">
-      {formatDate("07-04-2010")} - {formatDate("08-13-2014")}
+      {formatDate("03-05-2015")} - {formatDate("04-13-2019")}
     </span>
     <p className="text-[16px] leading-6 font-medium text-textColor">
-      Sr. Surgeon
+      Sr. labourer
     </p>
     <p className="text-[14px] leading-5 font-medium text-textColor">
-      New Apollo Hospital, New York.
+      New Apollo Hospital, Brampton PIND.
     </p> 
   </li>
 </ul>
