@@ -26,7 +26,7 @@ const DoctorCard = ({ doctor }) => {
         <span>{email}</span>
       </div>
       <div>
-        <img src={photo} className="w-full" alt="" />
+        <img src={photo} className="w-full h-96" alt="" />
       </div>
       <h2
         className="text-[18px] leading-[30px] lg:text-[26px] lg:leading-9 text-headingColor font-[700] 
